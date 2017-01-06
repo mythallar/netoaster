@@ -5,12 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:netoaster="clr-namespace:netoaster"
         mc:Ignorable="d"
-                         Width="300" 
-                         SizeToContent="Height" 
-                         WindowStyle="None" 
-                         ShowInTaskbar="False" 
-                         AllowsTransparency="True"
-                         Background="Transparent">
+        Width="300" 
+        SizeToContent="Height" 
+        WindowStyle="None" 
+        ShowInTaskbar="False" 
+        AllowsTransparency="True"
+        Topmost="True"
+        ShowActivated="False"
+        Focusable="False"
+        Background="Transparent">
+    
     <Border Name="Notification" Style="{StaticResource {ComponentResourceKey TypeInTargetAssembly={x:Type netoaster:ThemeKeys}, ResourceId=ToastCard}}">
         <DockPanel Margin="5">
             <TextBlock DockPanel.Dock="Left" Style="{StaticResource {ComponentResourceKey TypeInTargetAssembly={x:Type netoaster:ThemeKeys}, ResourceId=ToastIcon}}">
@@ -26,4 +30,5 @@
             </StackPanel>
         </DockPanel>
     </Border>
+    
 </Window>
